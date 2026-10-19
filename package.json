@@ -4,5 +4,9 @@
   "type": "module",
   "description": "Groups engineering services for platforms that host and operate agent computer systems.",
   "license": "UNLICENSED",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/agent-computer-platform-system-engineering-services-section.git"
+  }
 }
