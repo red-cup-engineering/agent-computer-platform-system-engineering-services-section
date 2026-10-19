@@ -1,0 +1,8 @@
+[submodule "multi-agent-computer-platform-system-engineering-services-section"]
+	path = services/multi-agent-computer-platform-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/multi-agent-computer-platform-system-engineering-services-section.git
+	branch = main
+[submodule "flatfile-agent-resource-system-engineering-services-section"]
+	path = services/flatfile-agent-resource-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/flatfile-agent-resource-system-engineering-services-section.git
+	branch = main
