@@ -7,18 +7,42 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-This section specializes agent computer system engineering to platforms that
-host agent computer systems and provide the durable boundaries through which
-they are operated.
+**The engineering layer for platforms that host and operate agent computer
+systems.** This repository composes specialized platform engineering
+repositories and their design material. It is not an agent implementation,
+a deployable hosting service on its own, or a claim that any platform is
+currently running.
 
-Apps in this section may compose apps owned by the upstream Agent Computer
-System Engineering Services Section. More specialized platform domains and
-their apps continue under `services/`.
+## Where to begin
 
-## Service specializations
+The current `services/` directory composes two separately maintained
+repositories:
 
-- `services/flatfile-agent-resource-system-engineering-services-section/`
-  owns the FARS domain, its FAE and PyFARS realizations, and their shared
-  conformance material.
-- `services/multi-agent-computer-platform-system-engineering-services-section/`
-  owns computer platforms that host and coordinate multiple agents.
+- [Flatfile Agent Resource System engineering](services/flatfile-agent-resource-system-engineering-services-section) — the resource-system domain and its related implementations and conformance material; verify the current realization and installation instructions in that component itself.
+- [Multi-agent computer platform systems](services/multi-agent-computer-platform-system-engineering-services-section) — hosting and coordination platforms for more than one agent.
+
+This section also has `content/` and a root `package.json` describing the
+composition. The root manifest **does not define a command-line entry point
+or an application export**. To try a specific service, follow the child
+repository's own package manifest, tests, and runbook.
+
+For the agent *computing* layer rather than the hosting layer, go to
+[Agent Computer System Engineering Services Section](https://github.com/red-cup-engineering/agent-computer-system-engineering-services-section).
+For source composition of multi-agent *behavior*, see
+[Multi-Agent Computer System Engineering Services Section](https://github.com/red-cup-engineering/multi-agent-computer-system-engineering-services-section).
+
+## Current status
+
+The two entries above are Git submodule pointers tracked at this repository's
+HEAD. They are evidence of source composition, **not** of a provisioned host,
+successful deployment, live availability, or standards certification. Check
+each child project's current Issues, pull requests, development branches,
+source exports, and independent test results before making operational claims.
+
+## Scope and boundaries
+
+An agent system determines what agents compute and how their work is
+constrained; a platform supplies the durable *hosting and operating*
+boundaries for such systems. This section organizes that second concern.
+Operations ownership, credentials, admission, and live runbooks remain
+with their respective providers and receiving services.
