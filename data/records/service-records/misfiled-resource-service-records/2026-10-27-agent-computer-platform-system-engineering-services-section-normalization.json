@@ -1,0 +1,24 @@
+{
+  "id": "2026-10-27-agent-computer-platform-system-engineering-services-section-normalization",
+  "kind": "misfiled-resources-register",
+  "by": "apply-services-section-normalization",
+  "date": "2026-10-27",
+  "moved": [
+    {
+      "from": "content/requirements/agent-platform-upstream-of-the-vendor-harnesses.json",
+      "to": "data/records/service-records/requirements-management-service-records/agent-platform-upstream-of-the-vendor-harnesses.json",
+      "rule": "requirements-are-service-records",
+      "sourceSha256": "443be0b221cc64a58a4416a19528dce3b625c99aa7399a7876b75787d31fa46f",
+      "destinationSha256": "443be0b221cc64a58a4416a19528dce3b625c99aa7399a7876b75787d31fa46f",
+      "byteIdentical": true
+    }
+  ],
+  "owed": [
+    {
+      "rule": "stray-top-level",
+      "reason": "LICENSE/ is not an entry the services-section law knows; its owner decides where it belongs",
+      "directory": ".",
+      "count": 1
+    }
+  ]
+}
